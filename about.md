@@ -16,7 +16,14 @@ end
 
 You can find my [resume here.]({{ site.url }}/assets/Shamikh-Hossain.pdf)
 
-picture below
-![My helpful screenshot]({{ site.url }}/assets/first.png)
+picture below! 
+![My helpful screenshot]({{ site.url }}/assets/first.PNG)
 
+<!-- 
+You can find the source code for the Jekyll new theme at:
+{% include icon-github.html username="jekyll" %} /
+[minima](https://github.com/jekyll/minima)
 
+You can find the source code for Jekyll at
+{% include icon-github.html username="jekyll" %} /
+[jekyll](https://github.com/jekyll/jekyll) -->
