@@ -17,7 +17,7 @@ end
 You can find my [resume here.]({{ site.url }}/assets/Shamikh-Hossain.pdf)
 
 picture below! 
-![My helpful screenshot]({{ site.url }}/assets/first.PNG)
+![My helpful screenshot]({{ site.url }}/assets/first.png)
 
 <!-- 
 You can find the source code for the Jekyll new theme at:
