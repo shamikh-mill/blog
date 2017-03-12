@@ -4,22 +4,30 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-
-{% highlight ruby  %}  # linenos here to add numbers 
+I'm a data enthusiast, history lover, and spicy ramen junkie from Dallas, TX, currently an undergraduate at Duke University in Durham, NC.
+I like learning new things that involve numbers and technology, and applying what I learn to try and predict other things. This blog is part of my effort to document what I try and, hopefully, learn along the way. Welcome to my blog!
+{% highlight ruby %}  
 def foo
-  puts 'foo'
-  puts 'hey!'
+  puts 'Hello World!'
 end
 {% endhighlight %}
 
+
+
+<!-- linenos here to add numbers
+ -->
+
 You can find my [resume here.]({{ site.url }}/assets/Shamikh-Hossain.pdf)
 
-picture below! 
+picture below!
 ![My helpful screenshot]({{ site.url }}/assets/first.png)
 
-<!-- 
+
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+
+
+
+<!--
 You can find the source code for the Jekyll new theme at:
 {% include icon-github.html username="jekyll" %} /
 [minima](https://github.com/jekyll/minima)
