@@ -15,10 +15,10 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Shamikh Hossain
-email: ssh50@duke.edu
+email: shamikh.hossain@duke.edu
 description: > # this means to ignore newlines until "baseurl:"
   Data lover, spicy ramen junkie, full-stack & algorithms enthusiast  
-baseurl: "/blog" # the subpath of your site, e.g. /blog. default = "". Added {{ site.baseurl }} to all paths. 
+baseurl: "/blog" # the subpath of your site, e.g. /blog. default = "". Added {{site.baseurl}} to all paths. 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: shamikh
 github_username:  shamikh-mill
