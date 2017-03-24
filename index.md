@@ -5,7 +5,7 @@
 layout: page
 ---
 
-[My helpful screenshot]({{site.baseurl}}{{ site.url }}/assets/misty.jpg)
+[My helpful]({{site.baseurl}}{{ site.url }}/assets/misty.jpg)
 
 I'm Shamikh Hossain, a computer science and economics undergrad at Duke
 University- welcome to my blog! My interests are in data science, economic
