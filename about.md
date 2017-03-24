@@ -20,8 +20,7 @@ end
 
 You can find my [resume here.]({{site.baseurl}}{{ site.url }}/assets/Shamikh-Hossain.pdf)
 
-picture below!
-![My helpful screenshot]({{site.baseurl}}{{ site.url }}/assets/first.png)
+picture below![My helpful screenshot]({{site.baseurl}}{{ site.url }}/assets/first.png)
 
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)

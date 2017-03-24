@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Goals</title>
-  <meta name="description" content="So, as a college student learning about a whole lot of different things, I felt like it was time to start a tech blog. Here, I’ll be documenting some technic...">
+  <title>Making a flight checker program</title>
+  <meta name="description" content="A couple of years ago, I read about a student’s Southwest flight checker. I decided to try and make a less intense version of the application using some Pyth...">
 
   <link rel="stylesheet" href="/blog/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/blog/test/2017/03/10/test.html">
+  <link rel="canonical" href="http://localhost:4000/blog/code/2017/03/19/making-a-flight-checker.html">
   <link rel="alternate" type="application/rss+xml" title="Shamikh Hossain" href="/blog/feed.xml">
   
   
@@ -63,33 +63,29 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Goals</h1>
-    <p class="post-meta"><time datetime="2017-03-10T10:46:38-05:00" itemprop="datePublished">Mar 10, 2017</time></p>
+    <h1 class="post-title" itemprop="name headline">Making a flight checker program</h1>
+    <p class="post-meta"><time datetime="2017-03-19T04:41:38-04:00" itemprop="datePublished">Mar 19, 2017</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>So, as a college student learning about a whole lot of different things, I felt like it was time to start a tech blog. Here, I’ll be documenting some technical as well as random endeavors as a sort of online “repository” (I know, can’t escape it) for my thoughts.
-Here are some of my goals for the following new year and semester:</p>
+    <p>A couple of years ago, I read about a student’s Southwest flight checker. I decided
+to try and make a less intense version of the application using some Python models, and
+thus set out to write a comprehensive script that would:</p>
 
-<p>1) Learn core concepts of computer science</p>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">import</span> <span class="n">webbrowser</span>
+<span class="n">from</span> <span class="n">datetime</span> <span class="n">import</span> <span class="n">datetime</span>
+<span class="n">from</span> <span class="n">threading</span> <span class="n">import</span> <span class="no">Timer</span></code></pre></figure>
 
-<p>2) Become stronger and more endurant</p>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">current_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+<span class="n">check_in_time</span> <span class="o">=</span> <span class="n">current_time</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">day</span><span class="o">=</span> <span class="n">current_time</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">hour</span> <span class="o">=</span> <span class="n">current_time</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span>
+<span class="n">minute</span> <span class="o">=</span> <span class="mi">18</span><span class="p">,</span> <span class="n">second</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">microsecond</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">change_in_time</span> <span class="o">=</span> <span class="n">check_in_time</span> <span class="o">-</span> <span class="n">current_time</span></code></pre></figure>
 
-<p>3) Develop more web applications that make people’s lives easier</p>
-
-<p>4) Learn to play chess</p>
-
-<p>5) Learn linear algebra and statistics</p>
-
-<p>6) Play with data</p>
-
-<p>7) Meet someone new everyday</p>
-
-<p>8) Spend less money</p>
-
-<p>9) Reprioritize my religion</p>
-
-<p>10) Learn sci-kit learn (pun intended)</p>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
 
 
   </div>
