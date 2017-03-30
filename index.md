@@ -16,7 +16,7 @@ Dr. Kyle Bradbury of the
 [Duke Energy Data Analytics Lab](https://energy.duke.edu/research/energy-data).
 
 
-# Recent Posts
+# Recent Posts 
 <ul>
   {% for post in site.posts %}
     <li>
