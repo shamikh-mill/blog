@@ -8,8 +8,13 @@ I'm a data enthusiast, history lover, and spicy ramen junkie from Dallas, TX, cu
 I like learning new things that involve numbers and technology, and applying what I learn to try and predict other things. This blog is part of my effort to document what I try and, hopefully, learn along the way. Welcome to my blog!
 
 {% highlight python %}  
+import webbrowser
+from datetime import datetime
+from threading import Timer
+
 def sayHello():
   print ('Hello worlds!')
+  return
 {% endhighlight %}
 
 
