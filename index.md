@@ -5,9 +5,7 @@
 layout: page
 ---
 
-[My helpful]({{site.baseurl}}{{ site.url }}/assets/misty.jpg)
-
-I'm Shamikh Hossain, a computer science and economics undergrad at Duke
+<!-- I'm Shamikh Hossain, a computer science and economics undergrad at Duke
 University- welcome to my blog! My interests are in data science, economic
 development, cryptocurrency, and machine-learning, and this site serves to be an
 online homebase for my adventures in these fields.
@@ -28,4 +26,4 @@ Dr. Kyle Bradbury of the
 </ul>
 
 
-<!-- https://github.com/jekyll/jekyll/issues/332 -->
+<!-- https://github.com/jekyll/jekyll/issues/332 --> -->
