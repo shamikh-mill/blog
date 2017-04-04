@@ -4,8 +4,10 @@ title: About
 permalink: /about/
 ---
 
-{% highlight %}  
-<about me>
+{% highlight python %}  
+def sayHello():
+  print ('Hello worlds!')
+  return
 {% endhighlight %} <!-- linenos here to add numbers -->
 
 I'm a data enthusiast, history lover, and spicy ramen junkie from Dallas, TX, currently an undergraduate at Duke University in Durham, NC.
