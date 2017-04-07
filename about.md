@@ -14,7 +14,7 @@ I'm a data enthusiast, history lover, and spicy ramen junkie from Dallas, TX, cu
 I like learning new things that involve numbers and technology, and applying what I learn to try and predict other things. This blog is part of my effort to document what I try and, hopefully, learn along the way. Welcome to my blog!
 
 You can find my [resume here.]({{site.baseurl}}{{ site.url }}/assets/Shamikh-Hossain.pdf)
-
+Links to my Twitter and GitHub accounts can be found at the bottom of this page! 
 <!-- picture below![My helpful screenshot]({{site.baseurl}}{{ site.url }}/assets/first.png) -->
 
 
