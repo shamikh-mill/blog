@@ -26,6 +26,8 @@ github_username:  shamikh-mill
 # Build settings
 markdown: kramdown
 theme: minima
+#theme: jekyll-whiteglass
+
 gems:
   - jekyll-feed
 exclude:
