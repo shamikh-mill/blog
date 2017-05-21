@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Notes on deep learning"
-date:   2017-03-10 10:46:38 -0500
+date:   2017-05-21 12:46:38 -0500
 categories: data science
 ---
 Lesson 1: Introduction to Deep Learning  
