@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Making a flight checker program</title>
-  <meta name="description" content="A couple of years ago, I read about a student’s Southwest flight checker. I decided to try and make a less intense version of the application using some Pyth...">
+  <meta name="description" content="A couple of years ago, I read about a web application developed by a CS student that automatically checked people into their flights. He was (too) successful...">
 
   <link rel="stylesheet" href="/blog/assets/main.css">
   <link rel="canonical" href="http://localhost:4000/blog/code/2017/03/19/making-a-flight-checker.html">
@@ -68,24 +68,37 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>A couple of years ago, I read about a student’s Southwest flight checker. I decided
-to try and make a less intense version of the application using some Python models, and
-thus set out to write a comprehensive script that would:</p>
+    <p>A couple of years ago, I read about a web application developed by a CS student that automatically checked people into their flights. He was (too) successful and unfortunately later asked to cease and desist his application because it actually worked. For educational purposes and to try and dabble with some Python scripting,  I decided to try and write a more basic of the application that, ideally, would:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">import</span> <span class="n">webbrowser</span>
-<span class="n">from</span> <span class="n">datetime</span> <span class="n">import</span> <span class="n">datetime</span>
-<span class="n">from</span> <span class="n">threading</span> <span class="n">import</span> <span class="no">Timer</span></code></pre></figure>
+<ul>
+  <li>Ask the user what Airline they are using, their flight number, and what time check in opens. For a simple start, I’ll use Southwest Airlines because their check-in page seems nice to work with. I’ll also later want to have the program calculate check-in time itself, because this time is usually 24 hours before the flight departs. This part of the program will, for now, just be in the command line. (Easy)</li>
+  <li>Open a user’s web browser at the time of check in. (Easy)</li>
+  <li>Enter in the flight details necessary on the online check-in form. (Hard)</li>
+  <li>Progress through the online check in form to complete check-in. Buttons would need to be pressed. (Hard)</li>
+</ul>
+
+<p>First, we need to import the Python webbrowser controller to be able to open webpages, as well as the datetime and timer modules for being able to open at check in time:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">webbrowser</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span> <span class="nn">threading</span> <span class="kn">import</span> <span class="n">Timer</span></code></pre></figure>
+
+<p>It was a bit tricky to learn how to set the timing the program would use, but a current_time.replace() seemed to work:</p>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">current_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
-<span class="n">check_in_time</span> <span class="o">=</span> <span class="n">current_time</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">day</span><span class="o">=</span> <span class="n">current_time</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">hour</span> <span class="o">=</span> <span class="n">current_time</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span>
+<span class="n">check_in_time</span> <span class="o">=</span> <span class="n">current_time</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">day</span><span class="o">=</span> <span class="n">current_time</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="n">hour</span> <span class="o">=</span> <span class="n">current_time</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span>  
 <span class="n">minute</span> <span class="o">=</span> <span class="mi">18</span><span class="p">,</span> <span class="n">second</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">microsecond</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
 <span class="n">change_in_time</span> <span class="o">=</span> <span class="n">check_in_time</span> <span class="o">-</span> <span class="n">current_time</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<p>And here’s the open function I wrote, with error handling for whether or not an instance of a web browser is already open:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">open</span><span class="p">():</span> <span class="c"># need to figure out way to have input here</span>
+	<span class="n">url</span> <span class="o">=</span> <span class="s">'https://www.southwest.com/air/flight-status/index.html'</span>
+	<span class="k">try</span><span class="p">:</span> <span class="n">webbrowser</span><span class="o">.</span><span class="n">open_new_tab</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>  
+	<span class="c"># Open URL in a new tab, if a browser window is already open.</span>
+	<span class="k">except</span><span class="p">:</span> <span class="n">webbrowser</span><span class="o">.</span><span class="n">open_new</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+	<span class="k">print</span> <span class="p">(</span><span class="s">"Check in page opened!"</span><span class="p">)</span>
+  <span class="k">return</span></code></pre></figure>
 
 
   </div>
