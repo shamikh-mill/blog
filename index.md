@@ -6,9 +6,9 @@ layout: page
 ---
 
 I'm Shamikh Hossain, a computer science and economics undergrad at Duke
-University- welcome to my blog! My interests are in data science, economic
+University. My interests are in data science, economic
 development, cryptocurrency, and machine-learning, and this site serves to be an
-online homebase for my adventures in these fields.
+online homebase for my adventures in these fields, and as a repository for my notes, thoughts, projects, etc. 
 
 This summer, I'll be conducting research on electricity access in developing countries
 using machine learning techniques (i.e. a convolutional neural network) under

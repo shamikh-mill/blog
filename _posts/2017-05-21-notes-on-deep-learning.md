@@ -2,7 +2,7 @@
 layout: post
 title:  "Notes on deep learning"
 date:   2017-05-21 12:46:38 -0500
-categories: data science
+categories: datasci
 ---
 This is an agglomeration of my notes from various resources on the subject of deep learning and neural networks, which I will be using in my research this summer. Some of the primary sources used are DataCamp courses. 
 
