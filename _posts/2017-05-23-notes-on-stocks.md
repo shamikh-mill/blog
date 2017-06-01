@@ -2,7 +2,9 @@
 layout: post
 title:  "Intro to stock trading"
 date:   2017-05-23 10:00:38 -0500
-categories: econ
+categories: econ'
+comments: true
+
 ---
 
 With new trading platforms and applications truly democratizing the power to buy and sell stocks, there are plentiful interesting and affordable ways to get involved with the stock market. A particulary cool application called [RobinHood](https://www.robinhood.com/) emerged that allowed one to buy and sell stocks without commision, and so I decided to get involved. As a complete beginner with only an Econ 101 exposure to markets and practically zero understanding of finance, I decided to compile some notes about stock trading in general, because I felt there was a shortage of concise, easy information for a complete beginner. The fact of the matter is entire books/bookshelves have been filled with information about investments, but here's a few cents and trading tips for a new investor using a buy and sell platform like RobinHood.
@@ -39,4 +41,7 @@ Other RobinHood things:
 - Check the "History" page in the app to keep track of your transactions (most importantly, the price at which you purchased).  
 
 Happy trading! 
+
+{% include disqus.html %}
+
 
