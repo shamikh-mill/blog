@@ -6,7 +6,7 @@ layout: page
 ---
 
 I'm Shamikh Hossain, a computer science and economics undergrad at Duke
-University. My interests are in data science, economic
+University. My research interests are in data science, economic
 development, cryptocurrency, and machine-learning, and this site serves to be an
 online homebase for my adventures in these fields, and as a repository for my notes, thoughts, projects, etc. 
 
@@ -16,7 +16,7 @@ Dr. Kyle Bradbury of the
 [Duke Energy Data Analytics Lab](https://energy.duke.edu/research/energy-data).
 
 
-# Recent Posts 
+# What I've been up to:  
 <ul>
   {% for post in site.posts %}
     <li>
