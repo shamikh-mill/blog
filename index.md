@@ -6,12 +6,15 @@ layout: page
 ---
 
 I'm Shamikh Hossain, a computer science and economics undergrad at Duke
-University. My research interests are in data science, economic
+University. I'm a researcher, web developer, and aspiring machine learning engineer.   
+
+
+<!-- My research interests are in data science, economic
 development, cryptocurrency, and machine-learning, and this site serves to be an
 online homebase for my adventures in these fields, and as a repository for my notes, thoughts, projects, etc. 
-
-This summer, I'll be conducting research on electricity access in developing countries
-using machine learning techniques (i.e. a convolutional neural network) under
+ -->
+I enjoy building models and applying computation to investigate interesting economic problems. This summer, I'll be conducting research on electricity access in developing countries
+using deep learning under
 Dr. Kyle Bradbury of the
 [Duke Energy Data Analytics Lab](https://energy.duke.edu/research/energy-data).
 
