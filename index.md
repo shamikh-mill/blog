@@ -5,8 +5,7 @@
 layout: page
 ---
 
-I'm Shamikh Hossain, a computer science and economics undergrad at Duke
-University. I'm a researcher, web developer, and aspiring machine learning engineer.   
+I'm Shamikh Hossain, a student researcher, web developer, and aspiring machine learning engineer.   
 
 
 <!-- My research interests are in data science, economic
