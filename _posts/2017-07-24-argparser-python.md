@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Using argument parser for your Python scripts"
+title:  "Using argument parser for Python scripts"
 date:   2017-07-24 10:00:38 -0500
 categories: cs
 comments: true
