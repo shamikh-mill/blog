@@ -45,8 +45,8 @@ ap = argparse.ArgumentParser(description='Greet the user')
 
 {% highlight python %}
 
-ap.add_argument("-n", "--name", type=str, default= "Monty",
-        help= "Name of person to greet. ex: Monty")
+ap.add_argument("-n", "--name", type=str, default= "Shamikh",
+        help= "Name of person to greet. ex: Shamikh")
 
 ap.add_argument("-a", "--age", type=int, default= 19,
         help= "Age of person to greet. ex: 19")
@@ -55,6 +55,7 @@ ap.add_argument("-a", "--age", type=int, default= 19,
 
 - "-n" and "--name" serve the same function, that is, they will indicate the parameter the user is entering, which becomes important if we have multiple parameters. "-j" is simply the shorthand abbreviation that can also be used to indicate that the next value entered is the argument desired. 
 - type: indicates the data type desired, will usually be string (str), float, integer (int) as needed 
+- default: the default value of the input that is assumed if nothing is input by the user. So, if the user simply enters 'python script.py' in the command line, then the default values will be used to run the program. 
 - help: the user can simply enter '--help' to see this helper string, along with the helper strings of all your inputs. Useful to explain requirements of the sought input here, and an example. 
 
 If the user types  
@@ -85,7 +86,26 @@ print ('Happy ' + str(age) + 'th' + ' Birthday ' + name + '!')
 {% endhighlight %}
 
 
-So, for a test run: 
+So, for a test run (here's the full code): 
+
+{% highlight python %}
+import argparse 
+
+
+ap = argparse.ArgumentParser(description = 'Script to greet and wish happy birthday.')
+
+ap.add_argument("-n", "--name", type=str, default= "Shamikh",
+        help= "Name of person to greet. ex: Shamikh")
+
+ap.add_argument("-a", "--age", type=int, default= 19,
+        help= "Age of person to greet. ex: 19")
+
+args = vars(ap.parse_args())
+
+print ('Happy ' + str(args['age']) + 'th' + ' Birthday ' + args['name'] + '!')
+{% endhighlight %}
+
+And here's the output of running the script in Terminal: 
 
 ````
 $ python script.py -name Monty -age 100
