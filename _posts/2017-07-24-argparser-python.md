@@ -11,6 +11,7 @@ It's often easy to run your Python scripts from the command line. Sometimes, you
 
 ````
 $ python script.py --input <input>
+# can use input in script
 ````  
 
 And then using these inputs in your program. Easy/quick documentation for these things can be hard to come by, so I'm making some notes here for reference. 
@@ -26,6 +27,7 @@ $ pip install argparse
 {% highlight python %}
 name = 'Monty'
 print ('Happy ' + str(age) + 'th' + ' Birthday ' + name + '!')
+# Ex: Happy 20th Birthday John!  for name = John, age = 20. 
 {% endhighlight %}
 
 3. First, we import the argparse model and instantiate an object: 
@@ -83,16 +85,13 @@ print ('Happy ' + str(age) + 'th' + ' Birthday ' + name + '!')
 {% endhighlight %}
 
 
-So, entering: 
+So, for a test run: 
+
 ````
-$ python script.py -n Monty -a 100
-# would return: 
+$ python script.py -name Monty -age 100
 Happy 100th Birthday Monty!
 
-
-
-
-
+````
 
 {% include disqus.html %}
 
