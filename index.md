@@ -12,10 +12,12 @@ I'm Shamikh Hossain, a student researcher, web developer, and aspiring machine l
 development, cryptocurrency, and machine-learning, and this site serves to be an
 online homebase for my adventures in these fields, and as a repository for my notes, thoughts, projects, etc. 
  -->
-I enjoy building models and applying computation to investigate interesting economic problems. This summer, I'll be conducting research on electricity access in developing countries
+I enjoy building models and applying computation to investigate interesting economic problems. Last summer, I researched electricity access in developing countries
 using deep learning under
 Dr. Kyle Bradbury of the
 [Duke Energy Data Analytics Lab](https://energy.duke.edu/research/energy-data).
+
+Check out my [projects](https://shamikh-mill.github.io/resume.pdf) and my [resume](https://shamikh-mill.github.io/blog/projects) for more! 
 
 
 # What I've been up to:  
