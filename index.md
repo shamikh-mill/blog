@@ -17,7 +17,6 @@ using deep learning under
 Dr. Kyle Bradbury of the
 [Duke Energy Data Analytics Lab](https://energy.duke.edu/research/energy-data).
 
-Check out my [projects](https://shamikh-mill.github.io/resume.pdf) and my [resume](https://shamikh-mill.github.io/blog/projects) for more! 
 
 
 # What I've been up to:  
@@ -31,3 +30,5 @@ Check out my [projects](https://shamikh-mill.github.io/resume.pdf) and my [resum
 
 
 <!-- https://github.com/jekyll/jekyll/issues/332 -->
+
+Check out some of my [projects](https://shamikh-mill.github.io/blog/projects) and my [resume](https://shamikh-mill.github.io/resume.pdf) for more! 
