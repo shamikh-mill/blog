@@ -8,7 +8,7 @@ Stuff I've worked on, am currently working on, or have contributed to
 
 - [Power Plant Satellite Imagery Dataset](https://figshare.com/articles/Power_Plant_Satellite_Imagery_Dataset/5307364) - A supervised-learning dataset of satellite imagery of powerplants agglomerated in summer 2017 for potential usage in training computer vision and machine learning models or applications. Open-source dataset has been published on Figshare. Technologies used included Python/NumPy/SciPy, ArcGIS. 
 
-- [Biology IT Inventory](bioinventory.herokuapp.com) - A web platform and accompanying REST API built using Django, the Django REST Framework and PostgreSQL for keeping track of loaner equipment inventory of Duke's Biology IT helpdesk. [GitHub](https://github.com/shamikh-mill/bio-inventory)
+- [Biology IT Inventory](http://bioinventory.herokuapp.com/) - A web platform and accompanying REST API built using Django, the Django REST Framework and PostgreSQL for keeping track of loaner equipment inventory of Duke's Biology IT helpdesk. [GitHub](https://github.com/shamikh-mill/bio-inventory)
 
 - [Hitchecker](https://github.com/tn74/MTurkAnnotationTool/blob/master/ASCRIPT_hit_checker.py) - A research tool and Python program that uses the Amazon Mechanical Turk API to allow researchers/Turk users to review image labels and annotations received for their crowdsourced Human Intelligence Tasks (HITs). Built in summer 2017 as part of an open-source end-to-end web [platform](https://github.com/tn74/MTurkAnnotationTool) for receiving and reviewing responses on Mechanical Turk for construcing image-related training datasets. 
 
