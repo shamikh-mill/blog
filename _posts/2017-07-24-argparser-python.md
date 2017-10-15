@@ -3,8 +3,8 @@ layout: post
 title:  "Using argument parser for Python scripts"
 date:   2017-07-24 10:00:38 -0500
 categories: cs
-comments: true
-
+<!-- comments: true
+ -->
 ---
 
 It's often easy to run your Python scripts from the command line. Sometimes, your scripts may require a form of input to run- here's a two-minute recipe to use the ArgumentParser module in Python to allow you to enter these inputs like the following: 
@@ -112,7 +112,4 @@ $ python script.py -name Monty -age 100
 Happy 100th Birthday Monty!
 
 ````
-
-{% include disqus.html %}
-
 
